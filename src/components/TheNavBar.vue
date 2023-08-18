@@ -6,7 +6,7 @@ import ButtonComponent from './ButtonComponent.vue';
 <template>
     <nav>
         <div class="logo">
-            <img src="c:\Users\GIDEON ASAMOAH\Downloads\Vector.png" alt="logo">
+            <img src="src\assets\logo.png" alt="logo">
             <p class="logo-name">Findtrend</p>
         </div>
 
@@ -49,6 +49,7 @@ nav{
     justify-content: space-between;
     background-color: black;
     align-items: center;
+    padding: 40px 80px 0px 80px;
 
 }
 

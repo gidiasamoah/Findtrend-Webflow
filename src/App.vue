@@ -2,11 +2,13 @@
 import TheNavBar from './components/TheNavBar.vue';
 
 import TheHeroSection from './components/TheHeroSection.vue';
+import TheNewTabVue from './components/TheNewTab.vue';
 </script>
 
 <template>
   <TheNavBar/>
- 
+  <TheHeroSection/>
+  <TheNewTabVue/>
 </template>
 
 <style scoped>
