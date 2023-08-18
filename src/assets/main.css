@@ -1,0 +1,11 @@
+@import './base.css';
+
+*{
+  margin: opx;
+}
+
+#app {
+  padding: 28px 80px;
+  font-family: Inter;
+  
+}
