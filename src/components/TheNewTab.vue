@@ -4,54 +4,50 @@
 </script>
 
 <template>
-<div class="newtab">
-    <p class =open>Open New tabs is Sh*t</p>
-
-    <div class="box"></div>
-
-    <div class="solution"><p class>A solution for your browser tabs and don’t make your device get slower over time. Get 
-    <br>ease and faster to discover a trend with just one tab.</p>
-
+    <div class="newtab">
+      <p class="open">Open New tabs is Sh*t</p>
+      <div class="rectangle"></div>
+      <div class="solution">
+        <p>A solution for your browser tabs that won't make your device slower over time. <br>Get ease and speed to discover trends with just one tab.</p>
+      </div>
     </div>
-</div>
- 
-</template>
-
-<style scoped>
-
-
-.newtab{
+  </template>
+  
+  <style scoped>
+  .newtab {
     background: #A8FF35;
-    position: relative;
-}
-.open {
-    padding: 140px 293px;
+    width: auto;
+    height: 742px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .open {
     color: #000;
-    text-align: center;
-    font-size: 50px;
-    font-style: normal;
+    font-size: 72px;
     font-weight: 700;
-    line-height: normal;  
-}
-
-.box{
-    padding-top: 286px;
-    margin-left:  469px;
+    line-height: normal;
+  }
+  
+  .rectangle {
+    border-radius: 16px;
+    background: #F5F5F5;
     width: 502px;
     height: 202px;
     flex-shrink: 0;
-    border-radius: 16px;
-    background: #F5F5F5;
-}
-
-.solution{
-    margin: 60px 387px;
+    margin: 20px auto; /* Center horizontally */
+  }
+  
+  .solution {
     color: #000;
-    text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 27px */ 
-}
-
-</style>
+    line-height: 150%;
+    margin-top: 20px; /* Add margin for space at the top */
+    text-align: center;
+  }
+  </style>
+  

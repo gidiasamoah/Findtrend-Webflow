@@ -13,6 +13,7 @@ button {
     padding: 12px 32px;
     border-radius: 40px;
     background: #fff;
+    border: none;
 
 }
 

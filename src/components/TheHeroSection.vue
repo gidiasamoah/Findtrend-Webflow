@@ -103,7 +103,7 @@ padding-top: 24px;
     background: #181818;
     align-items: center;
     margin-left: 106px ;
-    margin-bottom: 163.4;
+    padding-bottom: 163.4;
     padding-left: 20px;
     z-index: 4;
 }
