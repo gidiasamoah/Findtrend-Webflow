@@ -13,6 +13,7 @@ import TheBestDeal from './components/TheBestDeal.vue';
 import TheOffers from './components/TheOffers.vue';
 import TheEmail from './components/TheEmail.vue';
 import TheFooter from './components/TheFooter.vue';
+import ButtonComponent from './components/ButtonComponent.vue';
 
 
 
@@ -124,12 +125,6 @@ const logos = [
   },
 ]
 
-
-
-
-
-
-
 </script>
 
 <template>
@@ -151,9 +146,9 @@ const logos = [
   <div class="offer">
     <TheOffers v-for="offerimage in offerimages" :image="offerimage.path" :key="offerimage.id"/>
   </div>
-  <div>
+  
     <TheEmail/>
-  </div>
+
   <TheFooter/>
 
   
@@ -170,14 +165,15 @@ const logos = [
 }
 
 
-.social{
-    display: flex;
-    flex-wrap: wrap;
-    
+.social {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
 }
+
 .offer {
     display: flex;
-    gap: 20px; /* Add the desired gap between elements */
+    gap: 20px; 
     align-items: center;
     background: black;
     overflow: hidden; /* Hide any content that overflows the container */

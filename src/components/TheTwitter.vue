@@ -1,6 +1,6 @@
 <script scoped>
     
-
+import ButtonComponent from './ButtonComponent.vue';
 </script>
 
 <template>
@@ -10,7 +10,10 @@
         <img src="src/assets/tweet 3.png" alt="tweet" class="tweet3">
     </div>
 
-    
+    <div class="start-button">
+         <ButtonComponent class="custom-button" buttonText="Get Started" />
+    </div>
+
          
    
 

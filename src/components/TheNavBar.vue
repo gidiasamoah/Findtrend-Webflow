@@ -76,4 +76,6 @@ a {
 }
    
 
+@media (max-width: 500px){}
+
 </style>

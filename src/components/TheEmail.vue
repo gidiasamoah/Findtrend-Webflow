@@ -1,5 +1,5 @@
 <script scoped>
-
+import ButtonComponent from './ButtonComponent.vue';
 
 </script>
 
@@ -10,7 +10,9 @@
         <p class="join">Join us on email for </p>
         <P class="trending">more trending topics</P>
 
-        
+        <div class="start-button">
+            <ButtonComponent class="custom-button" buttonText="Get Started" />
+        </div>
         
         
 
