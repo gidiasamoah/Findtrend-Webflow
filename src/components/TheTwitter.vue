@@ -1,4 +1,5 @@
 <script scoped>
+    
 
 </script>
 
@@ -9,11 +10,36 @@
         <img src="src/assets/tweet 3.png" alt="tweet" class="tweet3">
     </div>
 
+    
+         
+   
+
 </template>
 
-<Style scoped>
-.tweet1 {
-    margin 77px 320px;
-}
+<style scoped>
 
-</Style>
+.tweets{
+        
+        background: #FAFAFA;
+    }
+.tweet1{
+        margin: 77px 320px;
+        
+        
+    }
+.tweet2{
+        padding: 43px 320px;
+     
+        
+    }
+.tweet3{
+        padding: 40px 320px;
+        
+        
+    }
+
+
+
+
+
+</style>

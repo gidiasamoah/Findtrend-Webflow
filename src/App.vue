@@ -1,13 +1,58 @@
 <script setup>
 import TheNavBar from './components/TheNavBar.vue';
 import TheHeroSection from './components/TheHeroSection.vue';
+import TheSocialMedia from './components/TheSocialMedia.vue';
 import TheNewTabVue from './components/TheNewTab.vue';
 import TheLongtextVue from './components/TheLongtext.vue';
 import ThePartnerSectionVue from './components/ThePartnerSection.vue';
 import PartnerCards from './components/PartnerCards.vue';
 import ThePlatformConnectVue from './components/ThePlatformConnect.vue';
-import ConnectCard from './components/ConnectCard.vue'
-import TheTwitter from './components/TheTwitter.vue'
+import ConnectCard from './components/ConnectCard.vue';
+import TheTwitter from './components/TheTwitter.vue';
+import TheBestDeal from './components/TheBestDeal.vue';
+import TheOffers from './components/TheOffers.vue';
+import TheEmail from './components/TheEmail.vue';
+import TheFooter from './components/TheFooter.vue';
+
+
+
+const sociallogos = [
+  {
+    id: 1,
+    path: "src/assets/Product Design.png"
+  },
+  {
+    id: 2,
+    path: "src/assets/Popular Design.png"
+  },  
+  {
+    id: 3,
+    path: "src/assets/Elon Mask.png"
+  },
+  {
+    id: 4,
+    path: "src/assets/cryptopunk.png"
+  },
+]
+
+const offerimages = [
+  {
+    id: 1,
+    path: "src/assets/personal.png"
+  },
+  {
+    id: 2,
+    path: "src/assets/regular.png"
+  },  
+  {
+    id: 3,
+    path: "src/assets/premium.png"
+  },
+
+]
+
+
+
 
 
 const logos = [
@@ -80,24 +125,6 @@ const logos = [
 ]
 
 
-const medialogos = [
-  {
-    id: 1,
-    path: "src/assets/facebook.png"
-  },
-  {
-    id: 2,
-    path: "src/assets/twitter.png"
-  },  
-  {
-    id: 3,
-    path: "src/assets/orange.png"
-  },
-  {
-    id: 4,
-    path: "src/assets/mail.png"
-  },
-]
 
 
 
@@ -108,6 +135,9 @@ const medialogos = [
 <template>
   <TheNavBar/>
   <TheHeroSection/>
+  <div class="social">
+    <TheSocialMedia v-for="sociallogo in sociallogos" :image="sociallogo.path" :key="sociallogo.id"/>
+  </div>
   <TheNewTabVue/>
   <TheLongtextVue/>
   <ThePartnerSectionVue/>
@@ -115,11 +145,17 @@ const medialogos = [
     <PartnerCards v-for="logo in logos" :image="logo.path" :key="logo.id"/>
   </div>
   <ThePlatformConnectVue/>
-  <div class="connect">
-    <ConnectCard v-for="medialogo in medialogos" :image="medialogo.path" :key="medialogo.id"/>
-  </div>
-  
+  <ConnectCard/>
   <TheTwitter/>
+  <TheBestDeal/>
+  <div class="offer">
+    <TheOffers v-for="offerimage in offerimages" :image="offerimage.path" :key="offerimage.id"/>
+  </div>
+  <div>
+    <TheEmail/>
+  </div>
+  <TheFooter/>
+
   
 </template>
 
@@ -133,8 +169,25 @@ const medialogos = [
     flex-wrap: wrap;
 }
 
-.connect{
-  display: flex;
-  
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+.offer {
+    display: flex;
+    gap: 20px; /* Add the desired gap between elements */
+    align-items: center;
+    background: black;
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+
+.offer > * {
+    transform: translateX(100px); /* Move elements to the left by 80px */
+}
+
+
+  
+
 </style>
